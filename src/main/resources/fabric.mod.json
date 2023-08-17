@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "bluelib",
+	"version": "${version}",
+	"name": "BlueLib",
+	"description": "a library for jayinblue's mods",
+	"authors": [
+		"jayinblue"
+	],
+	"contact": {
+	},
+	"license": "GNU GPL v3",
+	"icon": "assets/bluelib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.github.jayinblue.BlueLib"
+		],
+		"fabric-datagen": [
+			"com.github.jayinblue.BlueLibDataGenerator"
+		]
+	},
+	"mixins": [
+		"bluelib.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"owo": ">=0.11.1"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
